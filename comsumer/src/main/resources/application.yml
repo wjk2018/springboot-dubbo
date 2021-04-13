@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: comsumer-Server
+dubbo:
+  registry:
+    address: zookeeper://192.168.0.107:2181
+    check: false
+    timeout: 6000
+  config-center:
+    address: zookeeper://192.168.0.107:2181
+    timeout: 6000
+  metadata-report:
+    address: zookeeper://192.168.0.107:2181
+    timeout: 6000
+
+
+

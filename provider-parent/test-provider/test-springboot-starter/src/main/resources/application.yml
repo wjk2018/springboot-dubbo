@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: provider
+dubbo:
+  registry:
+    address: zookeeper://192.168.0.107:2181
+    protocol: rmi
+    timeout: 6000
+  config-center:
+    address: zookeeper://192.168.0.107:2181
+    timeout: 6000
+  metadata-report:
+    address: zookeeper://192.168.0.107:2181
+    timeout: 6000
+  protocols: { dubbo1: {name: dubbo, port: 20080, accesslog: "true"}, rmi: {name: rmi, port: 20081}}
