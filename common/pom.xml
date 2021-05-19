@@ -13,11 +13,6 @@
     <artifactId>common</artifactId>
     <version>${revision}</version>
     <dependencies>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>${dubbo.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.dubbo</groupId>
@@ -32,24 +27,17 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-recipes</artifactId>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>${nacos.client.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.wjk</groupId>
             <artifactId>provider-api</artifactId>
             <version>${revision}</version>
         </dependency>
+
+
     </dependencies>
 
 </project>
